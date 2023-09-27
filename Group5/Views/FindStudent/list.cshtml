@@ -1,0 +1,23 @@
+﻿@model List<Group5.Models.College>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+    <div> 
+        <ul>
+            @foreach(var l in Model)
+            {
+                <li>@l.mssv, @l.Name , @l.Class, @l.mahp</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
