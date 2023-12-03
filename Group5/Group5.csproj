@@ -122,8 +122,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CalculationController.cs" />
     <Compile Include="Controllers\FindStudentController.cs" />
+    <Compile Include="Controllers\HelperCalculationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PTBacNhatController.cs" />
+    <Compile Include="Controllers\RazorPTBacNhatController.cs" />
+    <Compile Include="Controllers\StudentAvatarController.cs" />
     <Compile Include="Controllers\SubjectController.cs" />
     <Compile Include="Controllers\TrangChuController.cs" />
     <Compile Include="Global.asax.cs">
@@ -131,6 +134,7 @@
     </Compile>
     <Compile Include="Models\PTBacNhat.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Student1.cs" />
     <Compile Include="Models\Subject.cs" />
     <Compile Include="Models\ViewCollege.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -198,15 +202,21 @@
     <Content Include="Views\PTBacNhat\UseModel.cshtml" />
     <Content Include="Views\PTBacNhat\Index.cshtml" />
     <Content Include="Views\PTBacNhat\UseArgu.cshtml" />
-    <Content Include="Views\FindStudent\Find.cshtml" />
     <Content Include="Views\FindStudent\ListViewBag.cshtml" />
     <Content Include="Views\FindStudent\ListModel.cshtml" />
+    <Content Include="Views\Shared\Greeting.cshtml" />
+    <Content Include="Views\HelperCalculation\Index.cshtml" />
+    <Content Include="Views\RazorPTBacNhat\Index.cshtml" />
+    <Content Include="Views\StudentAvatar\StudentAvatar.cshtml" />
+    <Content Include="Views\StudentAvatar\Confirm.cshtml" />
+    <Content Include="Views\FindStudent\Find.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Hello\Controllers\" />
     <Folder Include="Areas\Hello\Data\" />
     <Folder Include="Areas\Hello\Views\Shared\" />
+    <Folder Include="Images\" />
     <Folder Include="Views\TrangChu\" />
   </ItemGroup>
   <ItemGroup>

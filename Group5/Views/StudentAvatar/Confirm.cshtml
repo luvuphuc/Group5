@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Confirm</title>
+</head>
+<body>
+    <div style="border:dashed; width: 100%; height:500px; text-align: center">
+        <h2>Sinh viên</h2>
+        <div class="col-md-3" style="display: inline-block">
+            <img style="width: 200px; height: 200px;" src="@ViewBag.Avatar" />
+        </div>
+        <div class="col-md-9" style="display: inline-block ;font-size: medium; height: 45px; line-height: 25px;">
+            Mã nhân viên: @ViewBag.mssv <br />
+            Họ tên: @ViewBag.Name <br />
+            Lớp: @ViewBag.Class <br/>
+            @Html.ActionLink("Quay lại", "StudentAvatar", "StudentAvatar")
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿@model Group5.Models.PTBacNhat
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Index", "HelperCalculation", FormMethod.Post))
+        {
+            <span>Nhập a:</span>@Html.TextBoxFor(m => m.a)<br />
+            <span>Nhập b:</span>@Html.TextBoxFor(m => m.b)<br />
+            <input type="submit" value="Tính toán" class="my-2 btn-primary" /><br />
+            <span>Kết quả: @ViewBag.KQ</span>
+        }
+    </div>
+</body>
+</html>

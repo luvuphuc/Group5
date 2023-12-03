@@ -29,7 +29,8 @@ namespace Group5.Controllers
         }
         public ActionResult Greeting()
         {
-           return View();
+            ViewBag.title = "Chao cac ban";
+            return View();
         }
         public ActionResult List()
         {

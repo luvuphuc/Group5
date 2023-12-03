@@ -1,6 +1,11 @@
 ﻿
 @{
-    Layout = null;
+    ViewBag.Title = "Find";
+    Layout = "~/Views/Home/About.cshtml";
+}
+
+
+@{
     Group5.Models.College obj = (Group5.Models.College)ViewBag.Data;
 
 }
@@ -13,7 +18,7 @@
     <title>Find</title>
 </head>
 <body>
-    <div> 
+    <div>
         @obj.mssv @obj.Name @obj.Class @obj.mahp
     </div>
 </body>

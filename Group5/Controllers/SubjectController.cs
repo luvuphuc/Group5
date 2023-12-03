@@ -23,6 +23,21 @@ namespace Group5.Controllers
             };
             return View(ls);
         }
-        
+        public ActionResult Greeting()
+        {
+            ViewBag.title = "Chao ban hoc sinh";
+            return View();
+        }
+        public ActionResult ListRender()
+        {
+            var ls = new List<Subject>()
+            {
+                new Subject("SOT332","Hệ quản trị CSDL","3"),
+                new Subject("INS333","Lập trình web","2"),
+                new Subject("HAA333","Hệ điều hành", "3")
+            };
+            return View(ls);
+        }
+
     }
 }
